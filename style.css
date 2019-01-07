@@ -1,0 +1,37 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.burger-lines {
+    margin-right: 3em;
+    margin-bottom: 0.25em;
+    cursor: pointer;
+}
+
+.burger-lines span {
+    display: block;
+    /* position: relative; */
+    width: 2em;
+    height: 2px;
+    background: black;
+    margin-top: 8px;
+    transition: 1s;
+}
+
+.totalNavBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.links {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column; 
+}
