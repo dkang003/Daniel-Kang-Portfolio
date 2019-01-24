@@ -4,59 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daniel Kang's Portfolio</title>
+    <title>Daniel's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">    
     <script defer src="main.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- jquery cdn -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" 
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
     crossorigin="anonymous"></script>
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Bulma cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
 </head>
 <body>
     <!-- NAVBAR -->
-    <section class="navwrapper">
-        <nav class="totalNavBar">
-            <div class="logo">
-                <!-- <a class="pic" href="#"><img src="images/vault76.jpg" alt="myLogoHere"></a> -->
-            </div>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#skills" class="navbar-item">Skills</a>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#testimonials" class="navbar-item">Testimonials</a>
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#contact" class="navbar-item">Contact</a>
+          </div>
+        </div>
+    </nav>
 
-            <div class="links">
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Testimonials</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+    <!-- HERO -->
+    <a name="top"></a>
+    <section class="hero is-fullheight has-bg-img">
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title">
+                Daniel's Portfolio
+            </h1>
+            <!-- <h2 class="subtitle">
+                Hero subtitle
+            </h2> -->
             </div>
-            
-            <!-- <div class="burger"> -->
-                    <!-- <div class="burger-lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div> -->
-                <!-- <i class="fas fa-bars"></i>
-                <div class="burger-menu">
-                    <a href="#">Skills</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div> -->
-            <i class="fas fa-bars"></i>
-            <div class="burger-menu">
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Testimonials</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-
-
-        </nav>
+        </div>
     </section>
+    
+    <!-- SKILLS -->
+    <div class="section">
+        <a name="skills"></a>
+        <div class="container has-text-centered">
+            <h2><strong>MY SKILLS</strong></h2>
+            <p>HTML5 | CSS3 | jQuery | Bootstrap | Javascript | Node.js | MongoDB |
+                Mongoose | Express | Git | Github | Heroku | Axios | RESTful API |
+                React | Ruby on Rails | PostgreSQL | BCrypt | Passport.js | EJS |
+                Postman | Miscrosoft Visual Studio Code | Microsoft Word/Excel |
+                Bulma | Active Record</p>
+        </div>
+    </div>
 
+    <!-- PROJECTS CAROUSEL -->
+    <div class="section">
+        <a name="projects"></a>
+        <section class="slideshow-header">
+            <div class="slideshow-title">
+                Projects
+            </div>
+        </section>
+        <section class="slideshow-container">
+            <div class="project fade">
+                <img src="/Users/danielkang/src/ga/DK-SM-62/projects/myPortfolio/images/Screen Shot 2019-01-23 at 6.48.55 PM.png" alt="Project 1 Image">
+                <div class="projectText">My Journalling App</div>
+                <div class="technologies">HTML | CSS | JQUERY | JAVASCRIPT</div>
+            </div>
+            <div class="project fade">
+                <img src="/Users/danielkang/src/ga/DK-SM-62/projects/myPortfolio/images/Screen Shot 2019-01-23 at 6.53.33 PM.png" alt="Project 2 Image">
+                <div class="projectText">My Business Card App</div>
+                <div class="technologies">HTML | CSS | JQUERY | JAVASCRIPT</div>
+            </div>
+
+            <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+        </section>
+        <section class="slideshow-dots">
+            <span class="dot" id="one"></span>
+            <span class="dot" id="two"></span>
+        </section>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="section">
+        <a name="testimonials"></a>
+        <div class="section has-text-centered">
+            <h1 class="title is-1">Testimonials</h1>
+        </div>
+        <div class="four columns has-text-centered">
+            <div class="card column is-3">
+                <div class="card-content">
+                    <p class="title is-4">Daniel Kang</p>
+                    <p class="subtitle">dkang@gmail.com</p>
+                    <p>What a great guy! You have to hire him!</p>
+                </div>
+            </div>
+            <div class="card column is-3">
+                <div class="card-content">
+                    <p class="title is-4">Daniel Kang</p>
+                    <p class="subtitle">dkang@gmail.com</p>
+                </div>
+            </div>
+            <div class="card column is-3">
+                <div class="card-content">
+                    <p class="title is-4">Daniel Kang</p>
+                    <p class="subtitle">dkang@gmail.com</p>
+                </div>
+            </div>
+            <div class="card column is-3">
+                <div class="card-content">
+                    <p class="title is-4">Daniel Kang</p>
+                    <p class="subtitle">dkang@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="section container">    
+        <div class="field">
+            <label class="label">Name</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Name">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </p>
+        </div> 
+        <div class="field">
+            <label class="label">Email</label>
+            <p class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Phone Number</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Phone Number">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Message</label>
+            <p class="control has-icons-left">
+                <textarea class="textarea" placeholder="Message Me"></textarea>
+            </p>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="section footer">
+        <a name="about"></a>
+        <div class="columns">
+            <div class="column is-6 has-text-centered">
+                <h2 class="subtitle is-4"><strong>ABOUT ME</strong></h2>
+                <p>I am a software engineer with a background in client facing service.  
+                    I have experience managing people and multiple projects while meeting 
+                    and exceeding my goals.  I am a self starter, always looking for 
+                    opportunities to learn and develop new skills.  My long term objective 
+                    is to be on a team working on a large scale app, with an emphasis on 
+                    functionality.</p>
+            </div>
+            <div class="column is-6 has-text-centered">
+                <h2 class="subtitle is-4"><strong>SOCIAL MEDIA</strong></h2>
+                <a href="#"><i class="footlinks title is-2 flip fab fa-facebook"></i></a>
+                <a href="#"><i class="footlinks title is-2 flip fab fa-twitter-square"></i></a>
+                <a href="#"><i class="footlinks title is-2 flip fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -1,26 +1,144 @@
-.burger {
+/* Hero Background Image */
+.has-bg-img {
+    background: url("https://cdn.lynda.com/course/83603/83603-636216266356158373-16x9.jpg");
+    background-size: cover;
+}
+
+/* PROJECT CAROUSEL SECTION */
+.slideshow-header {
+    position: relative;
+    margin: 2em;
+}
+
+.slideshow-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.slideshow-container {
+    /* width: 100%;
+    height: auto; */
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
 }
 
-.totalNavBar {
-    display: flex;
-    flex-direction: row;
+/* container holding each project */
+.project {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* ================ */
+    height: auto;
+    /* position: relative; */
+    /* ================ */
+}
+
+.project img {
     width: 100%;
-    justify-content: space-between;
+    height: auto;
+    margin: auto 5em;
 }
 
-.links {
-    display: none;
-}
-
-.burger-menu {
-    display: none;
-    flex-direction: column; 
-    align-items: flex-start;
-}
-
-.fa-bars {
+/* project description */
+/* .projectText {
     font-size: 2em;
+    position: absolute;  
+    left: 50%;
+    top: 87%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.technologies {
+    position: absolute;  
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+
+/* previous and next buttons */
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    transition: 1s ease;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 0.25em;
+    border: 1px solid #2f2fa2;
+}
+
+.next {
+    right: 5%;
+    border-radius: 20px 5px 5px 20px;
+}
+
+.prev {
+    left: 5%;
+    border-radius: 5px 20px 20px 5px;
+}
+
+.prev:hover, .next:hover {
+    color: #f64c72;
+    border: 1px solid #f64c72;
+    background-color: rgba(47, 47, 162, 0.3);
+}
+
+/* slide indicators */
+.slideshow-dots {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dot {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    background-color: #2f2fa2;
+    border-radius: 20%;
+    margin: 0 0.3em;
+}
+
+.active, .dot:hover {
+    background-color: #f64c72;
+}
+
+/* slide animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.2 }
+    to { opacity: 1 }
+}
+
+
+/* Social Media Icons */
+.footlinks {
+    margin: 20px;
+}
+
+/* Flipping animation */
+.flip:hover {
+    animation: flip 2s infinite;
+    color:#f64c72;
+}
+
+@keyframes flip {
+    from { 
+        transform: rotate(0deg);
+     }
+    to {
+        transform: rotate(360deg);
+    }
 }
