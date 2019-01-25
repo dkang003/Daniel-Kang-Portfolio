@@ -51,13 +51,10 @@
     <a name="top"></a>
     <section class="hero is-fullheight has-bg-img">
         <div class="hero-body">
-            <div class="container">
-            <h1 class="title">
+            <div class="container hero-heading has-text-right">
+            <h1 class="title" style="position:relative; bottom:200px;">
                 Daniel's Portfolio
             </h1>
-            <!-- <h2 class="subtitle">
-                Hero subtitle
-            </h2> -->
             </div>
         </div>
     </section>
@@ -86,13 +83,21 @@
         <section class="slideshow-container">
             <div class="project fade">
                 <img src="./images/p1.png" alt="Project 1 Image">
-                <h1 class="title is-1">My Journalling App</h1>
-                <div class="technologies">HTML5 | CSS3 | BULMA | JQUERY | JAVASCRIPT</div>
+                <h1 class="title is-3"><a href="https://journalling-app.herokuapp.com/">My Journalling App</a></h1>
+                <div class="technologies has-text-centered"><strong>HTML5 | CSS3 | JS | MongoDB | Mongoose | Express | Node.js | Bootstrap | jQuery | Git | Trello | Balsamic Mockups 3 | Github | Heroku</strong></div>
+                <p style="margin-top: 15px;" class="has-text-centered">This app allows users to express their thoughts in a private space.
+                    I was inspired to make this app so I could begin journalling myself.  I built the front end using 
+                    HTML5, CSS3, and Bootstrap.  Back end was built on Node.js and Express.  Data is stored using MongoDB.
+                </p>
             </div>
             <div class="project fade">
                 <img src="./images/p2.png" alt="Project 2 Image">
-                <h1 class="title is-1">My Business Card App</h1>
-                <div class="technologies">HTML | CSS | JQUERY | JAVASCRIPT</div>
+                <h1 class="title is-3"><a href="https://business-cards-app.herokuapp.com/">My Business Card App</a></h1>
+                <div class="technologies has-text-centered"><strong>HTML5 | CSS3 | Ruby | Ruby on Rails | Active Record | Javascript | Git | Github | Trello | PostgreSQL | BCrypt | Bulma | Heroku</strong></div>
+                <p style="margin-top: 15px;" class="has-text-centered">I made this app as an alternative to business cards.  Users can view and search through a list
+                    of other users.  As a user, you have the ability to add other people's cards and build your 
+                    personal collection.  Front end built using HTML5, CSS3, and Bulma.  Back end was built with Ruby on Rails.  Data is stored via PostgreSQL.
+                </p>
             </div>
 
             <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
@@ -143,7 +148,8 @@
     </div>
 
     <!-- Contact Me -->
-    <div class="section container">    
+    <a name="contact"></a>
+    <div class="section container box">    
         <h1 class="title is-1 has-text-centered">Contact Me!</h1>
         <div class="field">
             <label class="label">Name</label>

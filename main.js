@@ -23,7 +23,7 @@ function showSlides() {
 
     projects[slideIdx - 1].style.display = "flex";
     dots[slideIdx-1].className += ' active';
-    setTimeout(showSlides, 5000);
+    setTimeout(showSlides, 7000);
 }
 
 showSlides();
