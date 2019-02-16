@@ -1,3 +1,19 @@
+.banner {
+    color: white;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255);  
+    position: absolute;
+    margin-left: 715px;
+    top: 150px;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Hero Background Image */
 .has-bg-img {
     background: url("https://cdn.lynda.com/course/83603/83603-636216266356158373-16x9.jpg");
@@ -142,5 +158,4 @@
         transform: rotate(360deg);
     }
 }
-
 
