@@ -46,7 +46,7 @@ function thisSlide(num) {
         dots[i].className = 'dot';
     }
     
-    slideIdx = num % 2;
+    slideIdx = num % 3;
     projects[slideIdx].style.display = "flex";
     dots[slideIdx].className += ' active';
 }
