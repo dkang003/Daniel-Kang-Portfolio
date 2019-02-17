@@ -1,3 +1,11 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Anonymous Pro', monospace; */
+
+.tech-div {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
 .banner {
     color: white;
     text-shadow:
@@ -11,6 +19,10 @@
 }
 
 .hero {
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-section {
     font-family: 'Poppins', sans-serif;
 }
 

@@ -7,7 +7,7 @@
     <title>Daniel's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">    
     <script defer src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Poppins" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- jquery cdn -->
@@ -66,21 +66,13 @@
     </section>
     
     <!-- SKILLS -->
-    <div class="section">
+    <div class="section skills-section">
         <a name="skills"></a>
         <div class="container has-text-centered">
             <h2><strong>MY SKILLS</strong></h2>
-            <p>HTML5 | CSS3 | jQuery | Bootstrap | Javascript | Node.js | MongoDB |
-                Mongoose | Express | Git | Github | Heroku | Axios | RESTful API |
-                React | Ruby on Rails | PostgreSQL | BCrypt | Passport.js | EJS |
-                Postman | Miscrosoft Visual Studio Code | Microsoft Word/Excel |
-                Bulma | Active Record</p>
-
-            <!-- Add icons instead of text! -->
-            <span>
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
-            </span>
+            <p>HTML5 | CSS3 | jQuery | Bootstrap | Bulma | Javascript | Node.js | MongoDB |
+                Mongoose | Express | Git | Github | Heroku | RESTful API |
+                React | Ruby on Rails | PostgreSQL</p>
         </div>
     </div>
 
@@ -89,12 +81,70 @@
         <div class="columns box">
             <a name="projects"></a>
             <section class="column">
-                <img src="https://i.imgur.com/NsLgjBS.png" alt="Project 1 Image">
+                <img src="https://i.imgur.com/NsLgjBS.png" alt="StockWatch screenshot">
             </section>
             <section class="column">
-                <h1 class="">Stock Watch</h1>
+                <h1 class="title is-3">Stock Watch</h1>
+                <p class="is-3">
+                    Stock Watch is a full-stack MERN app built with React.  Designed to help you stay up to date with the stock market, pulling up real time pricing and related news.
+                </p>
+                <div class="tech-div">
+                    Technologies Used:
+                    MongoDB | Express | React | Node | Bootstrap
+                </div>
             </section>
         </div>
+
+        <div class="columns box">
+            <a name="projects"></a>
+            <section class="column">
+                <img src="https://camo.githubusercontent.com/b2f87de50700d3a25a7a4801795514561d8ec66e/68747470733a2f2f692e696d6775722e636f6d2f386e42507162512e6a70673f31" alt="Hop-to-it Image">
+            </section>
+            <section class="column">
+                <h1 class="title is-3">Hop-to-it</h1>
+                <p class="is-3">
+                    A single page full-stack app that displays all the nearest breweries in the area using Google Maps API.
+                </p>
+                <div class="tech-div">
+                    Technologies Used:
+                    MongoDB | Express | React | Node | HTML5 | CSS3 | Github | Heroku
+                </div>
+            </section>
+        </div>
+
+        <div class="columns box">
+            <a name="projects"></a>
+            <section class="column">
+                <img src="./images/p2.png" alt="Business Card App Screenshot">
+            </section>
+            <section class="column">
+                <h1 class="title is-3">Business Card App</h1>
+                <p class="is-3">
+                    Full-stack built with Ruby on Rails.  This project was made as an alternative to business cards.  Each user can swap contact information with another user.
+                </p>
+                <div class="tech-div">
+                    Technologies Used:
+                    Ruby on Rails | PostgreSQL | Bulma | HTML5 | CSS3
+                </div>
+            </section>
+        </div>
+
+        <div class="columns box">
+            <a name="projects"></a>
+            <section class="column">
+                <img src="./images/p1.png" alt="Journal App Screenshot">
+            </section>
+            <section class="column">
+                <h1 class="title is-3">Journalling App</h1>
+                <p class="is-3">
+                    Keep track of a daily journal using this app.
+                </p>
+                <div class="tech-div">
+                    Technologies Used:
+                    MongoDB | Express | Node | Bootstrap | Github | HTML5 | CSS3 | jQuery
+                </div>
+            </section>
+        </div>        
     </div>
 
     <!-- PROJECTS CAROUSEL -->
@@ -143,44 +193,6 @@
             <span class="dot" id="two"></span>
             <span class="dot" id="three"></span>
         </section>
-    </div> -->
-
-    <!-- Testimonials -->
-    <!-- <div class="section">
-        <a name="testimonials"></a>
-        <div class="section has-text-centered">
-            <h1 class="title is-1">Testimonials</h1>
-        </div>
-        <div class="four columns has-text-centered">
-            <div class="card column is-3">
-                <div class="card-content">
-                    <p class="title is-4">Name</p>
-                    <p class="subtitle">email</p>
-                    <p>comment</p>
-                </div>
-            </div>
-            <div class="card column is-3">
-                <div class="card-content">
-                    <p class="title is-4">Name</p>
-                    <p class="subtitle">email</p>
-                    <p>comment</p>
-                </div>
-            </div>
-            <div class="card column is-3">
-                <div class="card-content">
-                    <p class="title is-4">Name</p>
-                    <p class="subtitle">email</p>
-                    <p>comment</p>
-                </div>
-            </div>
-            <div class="card column is-3">
-                <div class="card-content">
-                    <p class="title is-4">Name</p>
-                    <p class="subtitle">email</p>
-                    <p>comment</p>
-                </div>
-            </div>
-        </div>
     </div> -->
 
     <!-- Contact Me -->
@@ -234,12 +246,7 @@
         <div class="columns">
             <div class="column is-6 has-text-centered">
                 <h2 class="subtitle is-4"><strong>ABOUT ME</strong></h2>
-                <p>I am a software engineer with a background in client facing service.  
-                    I have experience managing people and multiple projects while meeting 
-                    and exceeding my goals.  I am a self starter, always looking for 
-                    opportunities to learn and develop new skills.  My long term objective 
-                    is to be on a team working on a large scale app, with an emphasis on 
-                    functionality.</p>
+                <p>I am a software engineer with a background in client facing service.  I have experience managing people and multiple projects while meeting and exceeding my goals.  I am a self starter, always looking for opportunities to learn and develop new skills.  My long term objective is to be on a team working on a large scale app, with an emphasis on functionality.  My goal is to build intuitive, user-friendly applications with organized and efficient code.</p>
             </div>
             <div class="column is-6 has-text-centered">
                 <h2 class="subtitle is-4"><strong>CONNECT WITH ME</strong></h2>
