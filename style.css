@@ -1,29 +1,43 @@
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Anonymous Pro', monospace; */
+.title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pdesc {
+    font-family: 'Anonymous Pro', monospace;
+}
 
 .tech-div {
     margin-top: 20px;
     font-size: 1em;
 }
 
-.banner {
-    color: white;
+.hero-text {
+    color: black;
     text-shadow:
     -1px -1px 0 rgb(255, 255, 255),
     1px -1px 0 rgb(255, 255, 255),
     -1px 1px 0 rgb(255, 255, 255),
     1px 1px 0 rgb(255, 255, 255);  
     position: absolute;
-    margin-left: 715px;
-    top: 150px;
+    left: 58%;
+    top: 25%;
+    font-size: 2em;
 }
 
 .hero {
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Anonymous Pro', monospace; */
 }
 
 .skills-section {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Anonymous Pro', monospace;
 }
 
 /* Hero Background Image */
